@@ -1,20 +1,153 @@
 /*universal styles*/
-body {
-  background-color: black;
-  font-family: 'verdana';
+html {
+  font-family: 'Helvetica';
   color: white;
+  font-size: 18px;
+  width: 960px;
 }
 
 /*logo*/
+.logo {
+  background-color: black;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 40px;
+  display: flex;
+  padding-top: 6px;
+
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+  max-width: 30%;
+}
+
+.logo p {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 /*main banner*/
+.mainbanner {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.newarrival {
+  background-color: black;
+  width: 20rem;
+  margin-top: 9rem;
+  margin-left: 5rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.newarrival h1 {
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
 /*navigation*/
+.navigation {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: firebrick;
+  height: 4rem;
+  }
+
+ .navigation span {
+   visibility: hidden;
+ }
+
+.largemenu p {
+  display: inline-flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 /*product grid*/
-/*exploding pen*/
-/*cellular watch*/
+.productgrid {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.productgrid .square {
+  border: 4px solid black;
+  width: 20%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.square img {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.square p {
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
+
 /*locatiours*/
-/*location*/
+.locatiours {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.locours span {
+  background-color: black;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  width: 50%;
+  padding-right: 11rem;
+}
+
+.locours p {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  text-align: left;
+
+}
+
 /*hours*/
 /*footer*/
+.footer {
+  display: flex;
+  background-color: black;
+  height: 5rem;
+  margin-top: 5rem;
+}
+
+.footer p {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  text-align: left;
+}
 
 /*you can do it =)*/
 /*i believe in you!*/
