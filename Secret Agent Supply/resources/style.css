@@ -6,6 +6,10 @@ html {
   width: 960px;
 }
 
+.content {
+
+}
+
 /*logo*/
 .logo {
   background-color: black;
@@ -51,9 +55,14 @@ html {
   margin-bottom: 5rem;
 }
 
+.newarrival h4 {
+  font-size: 1rem;
+}
+
 .newarrival h1 {
   font-weight: bold;
   margin-top: 0.25rem;
+  font-size: 2rem;
 }
 
 /*navigation*/
@@ -75,6 +84,11 @@ html {
   margin-right: 2rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  color: white;
+}
+
+.largemenu a {
+  text-decoration: none;
 }
 
 /*product grid*/
@@ -98,12 +112,19 @@ html {
   padding-bottom: 2rem;
 }
 
+.square .thermal {
+  max-width: 100%;
+  height: auto;
+}
+
 .square p {
   background-color: black;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  text-align: center;
 
 }
+
 
 /*locatiours*/
 .locatiours {
@@ -151,3 +172,81 @@ html {
 
 /*you can do it =)*/
 /*i believe in you!*/
+
+/*query for >1024px*/
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
+
+  .content {
+    width: 70%;
+  }
+
+ .navigation span {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+ }
+
+ .navigation a {
+   visibility: hidden;
+ }
+
+ .productgrid .square {
+   width: 47%
+   justify-content: space-around;
+ }
+
+ .productgrid .thermal {
+   visibility: hidden;
+ }
+
+  .locatiours {
+    display: flex;
+    justify-content: space-between;
+  }
+
+} /*this closes the media query for >1024*/
+
+/*query for >470px*/
+
+@media only screen and (max-width: 470px) {
+  html {
+    width: 70%;
+  }
+
+  .mainbanner h4 {
+    font-size: 0.77rem;
+  }
+
+  .mainbanner h1 {
+    font-size: 1rem;
+  }
+
+  .navigation span {
+     visibility: visible;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 0.75rem;
+     padding-bottom: 0.75rem;
+  }
+
+  .navigation a {
+    visibility: hidden;
+  }
+
+  .productgrid .square {
+    width: 47%
+  }
+
+  .productgrid .watch {
+    visibility: hidden;
+  }
+
+  .productgrid .thermal {
+    visibility: hidden;
+  }
+
+} /*this closes media query for >470px*/
